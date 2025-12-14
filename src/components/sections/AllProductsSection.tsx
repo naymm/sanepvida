@@ -10,16 +10,18 @@ import softgel from "@/assets/products/softgel.png";
 import proteinBlue from "@/assets/products/protein-blue.png";
 import proteinBlack from "@/assets/products/protein-black.png";
 import fishOil from "@/assets/products/fish-oil.png";
+import aguaOxigenada3250ml from "@/assets/products/Agua-Oxigenada_3_250ml.png";
+import aguaOxigenada3500ml from "@/assets/products/Agua-Oxigenada_3_500ml.png";
 
 const products = [
   {
-    image: buscopan,
+    image: aguaOxigenada3250ml,
     category: "Vitamins",
     categoryColor: "category-vitamins",
     name: "Buscopan Forte Tab 20mg x 10",
   },
   {
-    image: nutritionVanilla,
+    image: aguaOxigenada3500ml,
     category: "Protein",
     categoryColor: "category-protein",
     name: "Nutren Diabetes Vanilla",
