@@ -252,3 +252,9 @@
     to { opacity: 1; transform: translateX(0); }
   }
 }
+
+
+.singular-produto {
+  padding-top: 100px;
+  padding-bottom: 200px !important;
+}

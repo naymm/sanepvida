@@ -1,7 +1,9 @@
-import { ShoppingCart, Eye } from "lucide-react";
+import { Eye } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 interface ProductCardProps {
+  id?: string;
   image: string;
   category: string;
   categoryColor: string;
@@ -11,6 +13,7 @@ interface ProductCardProps {
 }
 
 const ProductCard = ({ 
+  id,
   image, 
   category, 
   categoryColor, 
@@ -34,14 +37,28 @@ const ProductCard = ({
         <h3 className="font-bold text-primary-dark mt-2 mb-2 line-clamp-2 min-h-[48px] text-base">
           {name}
         </h3>
-        <Button
-          variant="outline"
-          size="sm"
-          className="w-full rounded-full bg-gray-100 hover:bg-gray-200 border-0 text-primary-dark font-medium h-10"
-        >
-          <Eye className="w-4 h-4 mr-2" />
-          Ver detalhes
-        </Button>
+        {id ? (
+          <Link to={`/produto/${id}`}>
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full rounded-full bg-gray-100 hover:bg-gray-200 border-0 text-primary-dark font-medium h-10"
+            >
+              <Eye className="w-4 h-4 mr-2" />
+              Ver detalhes
+            </Button>
+          </Link>
+        ) : (
+          <Button
+            variant="outline"
+            size="sm"
+            className="w-full rounded-full bg-gray-100 hover:bg-gray-200 border-0 text-primary-dark font-medium h-10"
+            disabled
+          >
+            <Eye className="w-4 h-4 mr-2" />
+            Ver detalhes
+          </Button>
+        )}
       </div>
     </div>
   );

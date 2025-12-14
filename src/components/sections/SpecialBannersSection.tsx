@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import spaRelaxed from "@/assets/banners/spa-relaxed.png";
 import medicalGloves from "@/assets/banners/medical-gloves.png";
+import canforado from "@/assets/banners/canforado.png";
+import iodopovidona from "@/assets/banners/iodopovidona.png";
 
 const SpecialBannersSection = () => {
   return (
@@ -13,7 +15,7 @@ const SpecialBannersSection = () => {
           {/* Banner 1 - Spa */}
           <div className="special-banner group h-64 md:h-80">
             <img
-              src={spaRelaxed}
+              src={canforado}
               alt="Spa relaxado"
               className="w-full h-full object-cover"
             />
@@ -33,7 +35,7 @@ const SpecialBannersSection = () => {
           {/* Banner 2 - Women's Health */}
           <div className="special-banner group h-64 md:h-80">
             <img
-              src={medicalGloves}
+              src={iodopovidona}
               alt="Saúde da mulher"
               className="w-full h-full object-cover"
             />

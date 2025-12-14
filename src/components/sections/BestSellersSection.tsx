@@ -1,44 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProductCard from "@/components/ui/ProductCard";
-import fishOil from "@/assets/products/fish-oil.png";
-import proteinBlack from "@/assets/products/protein-black.png";
-import codOil from "@/assets/products/cod-oil.png";
-import proteinBlue from "@/assets/products/protein-blue.png";
-import vitaminB6 from "@/assets/products/vitamin-b6.png";
+import { products } from "@/data/products";
 
-const products = [
-  {
-    image: vitaminB6,
-    category: "Home",
-    categoryColor: "category-home",
-    name: "Go Natural Fruit & Nut Delight",
-  },
-  {
-    image: fishOil,
-    category: "Pets",
-    categoryColor: "category-pets",
-    name: "Spring Leaf Kids Fish Oil 750mg",
-  },
-  {
-    image: codOil,
-    category: "Para",
-    categoryColor: "category-para",
-    name: "Nordic Naturals Arctic-D Cod",
-  },
-  {
-    image: proteinBlue,
-    category: "Baby",
-    categoryColor: "category-baby",
-    name: "Vega Plant Protein – Banana",
-  },
-  {
-    image: proteinBlack,
-    category: "Sports Nutrition",
-    categoryColor: "category-sports",
-    name: "Vital Protein Strawberry",
-  },
-];
+// Seleciona os produtos mais vendidos (primeiros 5)
+const bestSellers = products.slice(0, 5);
 
 const BestSellersSection = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -82,9 +48,9 @@ const BestSellersSection = () => {
             className="flex gap-6 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {products.map((product, index) => (
+            {bestSellers.map((product) => (
               <div
-                key={index}
+                key={product.id}
                 className="min-w-[250px] max-w-[250px] snap-start"
               >
                 <ProductCard {...product} />
