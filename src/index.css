@@ -258,3 +258,10 @@
   padding-top: 100px;
   padding-bottom: 200px !important;
 }
+
+.left-botao {
+  left: -50px !important;
+}
+.right-botao {
+  right: -20px !important;
+}

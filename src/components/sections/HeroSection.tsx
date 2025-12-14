@@ -4,13 +4,14 @@ import { Button } from "@/components/ui/button";
 import vitaminB6 from "@/assets/products/vitamin-b6.png";
 import proteinBlue from "@/assets/products/protein-blue.png";
 import codOil from "@/assets/products/cod-oil.png";
+import canforadoDestaque from "@/assets/products/canforado-destaque.png";
 
 const slides = [
   {
     subtitle: "Pyridoxine Vitamin B6",
     title: "Vitamins &",
     highlight: "Supplements",
-    image: vitaminB6,
+    image: canforadoDestaque,
     floatImage: codOil,
   },
   {
@@ -99,7 +100,7 @@ const HeroSection = () => {
               key={`main-${currentSlide}`}
               src={slides[currentSlide].image}
               alt="Product"
-              className="w-64 h-64 object-contain animate-fade-in drop-shadow-2xl"
+              className="w-64 h-64 object-contain animate-fade-in drop-shadow-2xl w-full h-full"
             />
             <img
               key={`float-${currentSlide}`}
@@ -111,7 +112,7 @@ const HeroSection = () => {
         </div>
 
         {/* Navigation */}
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden md:block">
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block left-botao">
           <button
             onClick={prevSlide}
             className="carousel-arrow"
@@ -119,7 +120,7 @@ const HeroSection = () => {
             <ChevronLeft className="w-5 h-5" />
           </button>
         </div>
-        <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block">
+        <div className="absolute right-4 top-1/2 -translate-y-1/2 hidden md:block right-botao">
           <button
             onClick={nextSlide}
             className="carousel-arrow"
