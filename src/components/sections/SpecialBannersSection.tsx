@@ -25,10 +25,12 @@ const SpecialBannersSection = () => {
               <h3 className="text-card text-2xl md:text-3xl font-display font-bold mb-4">
                 Um corpo forte
               </h3>
+              <a href="/produto/4">
               <Button className="bg-foreground/90 hover:bg-foreground text-background w-fit rounded-full">
                 Ver detalhes
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Button>
+              </a>
             </div>
           </div>
 
@@ -48,10 +50,12 @@ const SpecialBannersSection = () => {
               <p className="text-card text-2xl md:text-3xl font-display font-bold mb-4">
                 Duo Perfeito
               </p>
+              <a href="/produto/14">
               <Button className="bg-foreground/90 hover:bg-foreground text-background w-fit rounded-full">
                 Ver detalhes
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Button>
+              </a>
             </div>
           </div>
         </div>
