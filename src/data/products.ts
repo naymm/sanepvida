@@ -26,6 +26,11 @@ import iodopovidonaEspuma from "@/assets/products/iodopovidona-espuma.png";
 import iodopovidonaEspumaVaginal from "@/assets/products/iodopovidona-espuma-vaginal.png";
 import iodopovidonaSolucaoVaginal from "@/assets/products/iodopovidona-solucao-vaginal.png";
 import iodopovidonaSolucaoGargarejar from "@/assets/products/iodopovidona-solucao-gargarejar.png";
+import oleoAmendoas from "@/assets/products/oleo-amendoas.png";
+import oleoRicinio from "@/assets/products/oleo-ricinio.png";
+import acetonaSuavizada from "@/assets/products/acetona-suavizada.png";
+import acetonaPura from "@/assets/products/acetona-pura.png";
+import aguaDestilada from "@/assets/products/agua-destilada.png";
 
 export interface Product {
   id: string;
@@ -344,6 +349,108 @@ export const products: Product[] = [
       benefits: [
         "Desinfecta e limpa feridas e lesões cutâneas",
         "Eficaz contra infecções bacterianas e virais"
+      ]
+    }
+  },
+  {
+    id: "16",
+    image: oleoAmendoas,
+    category: "Adjuvantes",
+    categoryColor: "category-pets",
+    name: "Óleo de Amendoas Doces",
+    price: "$ 22,90",
+    rating: 4,
+    description: "Óleo de Amendoas Doces é um produto que contém óleo de amendoas doces, que é usado para desinfectar e limpar feridas e lesões cutâneas.",
+    details: {
+      brand: "Vida Pro",
+      weight: "125ml",
+      dosage: "1 cápsula ao dia",
+      ingredients: ["Óleo de Amendoas Doces"],
+      benefits: [
+        "Ajuda a melhorar a saúde da pele",
+        "Ajuda a reduzir a inflamação"
+      ]
+    }
+  },
+  {
+    id: "17",
+    image: oleoRicinio,
+    category: "Adjuvantes",
+    categoryColor: "category-pets",
+    name: "Óleo de Ricínio",
+    price: "$ 22,90",
+    rating: 4,
+    description: "Óleo de Ricínio é um produto que contém óleo de ricínio, que é usado para desinfectar e limpar feridas e lesões cutâneas.",
+    details: {
+      brand: "Vida Pro",
+      weight: "125ml",
+      dosage: "1 cápsula ao dia",
+      ingredients: ["Óleo de Ricínio"],
+      benefits: [
+        "Ajuda a melhorar a saúde da pele",
+        "Ajuda a reduzir a inflamação",
+        "Ajuda a melhorar a circulação sanguínea"
+      ]
+    }
+  },
+  {
+    id: "18",
+    image: acetonaSuavizada,
+    category: "Adjuvantes",
+    categoryColor: "category-pets",
+    name: "Acetona Suavizada",
+    price: "$ 22,90",
+    rating: 4,
+    description: "Acetona Suavizada é um produto que contém acetona suavizada, que é usado para desinfectar e limpar feridas e lesões cutâneas.",
+    details: {
+      brand: "Vida Pro",
+      weight: "125ml",
+      dosage: "1 cápsula ao dia",
+      ingredients: ["Acetona Suavizada"],
+      benefits: [
+        "Ajuda a limpar e desinfectar superfícies",
+        "Eficaz contra infecções bacterianas e virais"
+      ]
+    }
+  },
+  {
+    id: "19",
+    image: acetonaPura,
+    category: "Adjuvantes",
+    categoryColor: "category-pets",
+    name: "Acetona Pura",
+    price: "$ 22,90",
+    rating: 4,
+    description: "Acetona Pura é um produto que contém acetona pura, que é usado para desinfectar e limpar feridas e lesões cutâneas.",
+    details: {
+      brand: "Vida Pro",
+      weight: "125ml",
+      dosage: "1 cápsula ao dia",
+      ingredients: ["Acetona Pura"],
+      benefits: [
+        "Ajuda a limpar e desinfectar superfícies",
+        "Eficaz contra infecções bacterianas e virais",
+        "Eficaz contra infecções virais"
+      ]
+    }
+  },
+  {
+    id: "20",
+    image: aguaDestilada,
+    category: "Adjuvantes",
+    categoryColor: "category-pets",
+    name: "Água Destilada",
+    price: "$ 22,90",
+    rating: 4,
+    description: "Água Destilada é um produto que contém água destilada, que é usado para desinfectar e limpar feridas e lesões cutâneas.",
+    details: {
+      brand: "Vida Pro",
+      weight: "5L",
+      dosage: "1 copo de 1000ml",
+      ingredients: ["Água Destilada"],
+      benefits: [
+        "Usa para preparar soluções e desinfectar superfícies",
+        "Eficaz para higienização de instrumentos médicos"
       ]
     }
   }

@@ -9,9 +9,9 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Início", href: "/",},
-    { name: "Sobre Nós", href: "/sobre-nos", },
-    { name: "Produtos", href: "#produtos" },
+    { name: "Início", href: "/" },
+    { name: "Sobre Nós", href: "/sobre-nos" },
+    { name: "Produtos", href: "/produtos" },
     { name: "Blog", href: "#blog" },
     { name: "Contate-nos", href: "#contato" },
   ];
