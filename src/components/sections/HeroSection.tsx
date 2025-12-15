@@ -5,29 +5,30 @@ import vitaminB6 from "@/assets/products/vitamin-b6.png";
 import proteinBlue from "@/assets/products/protein-blue.png";
 import codOil from "@/assets/products/cod-oil.png";
 import canforadoDestaque from "@/assets/products/canforado-destaque.png";
-import canforadoNormal from "@/assets/banners/canforado-normal.png";
-import iodopovidonaNormal from "@/assets/banners/iodopovidonas-normal.png";
+import galenicos from "@/assets/banners/galenicos.png";
+import iodopovidonaNormal from "@/assets/banners/iodopovidonas.png";
+import adjuvantesNormal from "@/assets/banners/adjuvantes-normal.png";
 
 const slides = [
   {
-    subtitle: "Álcool Canforado",
-    title: "Alívio Natural",
-    highlight: "Para Bem-estar",
-    image: canforadoDestaque,
-    floatImage: canforadoNormal,
+    subtitle: "Galênicos",
+    title: "Desinfecção &",
+    highlight: "Limpeza",
+    image: galenicos,
+    floatImage: galenicos,
   },
   {
-    subtitle: "Proteína Vegetal",
-    title: "Nutrição &",
-    highlight: "Bem-estar",
+    subtitle: "Iodopovidonas",
+    title: "Limpeza &",
+    highlight: "Proteção",
     image: iodopovidonaNormal,
     floatImage: vitaminB6,
   },
   {
-    subtitle: "Óleo de Fígado de Bacalhau",
-    title: "Saúde &",
-    highlight: "Vitalidade",
-    image: codOil,
+    subtitle: "Adjuvantes",
+    title: "Cuidados",
+    highlight: "Pessoais",
+    image: adjuvantesNormal,
     floatImage: proteinBlue,
   },
 ];
@@ -74,7 +75,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative hero-gradient min-h-[600px] overflow-hidden pt-32 md:pt-40">
+    <section className="fundo-slider relative hero-gradient min-h-[600px] overflow-hidden pt-32 md:pt-40">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 right-0 w-[800px] h-[800px] hero-blob opacity-50" />

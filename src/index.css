@@ -269,3 +269,18 @@
 .texto-justificado {
   text-align: justify !important;
 }
+
+.fundo-slider {
+  background-image: url('@/assets/banners/fundo-slide.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fundo-slider::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.425); /* opacidade */
+  z-index: 1;
+}
