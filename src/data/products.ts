@@ -353,3 +353,5 @@ export const getProductById = (id: string): Product | undefined => {
   return products.find(product => product.id === id);
 };
 
+
+

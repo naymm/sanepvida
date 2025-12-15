@@ -265,3 +265,7 @@
 .right-botao {
   right: -20px !important;
 }
+
+.texto-justificado {
+  text-align: justify !important;
+}

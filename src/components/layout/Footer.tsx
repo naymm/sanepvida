@@ -2,6 +2,7 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube, Mail, MapPin } from "l
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
+import logowhite from "@/assets/img/logo_white.svg";
 
 const Footer = () => {
   const informationLinks = [
@@ -26,14 +27,16 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Column 1 - Newsletter */}
           <div>
-            <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">P</span>
-              </div>
-              <span className="font-display font-bold text-2xl text-footer-foreground">Propharm</span>
-            </a>
+            {/* Logo */}
+          <a href="/" className="flex items-center gap-2 p-3">
+            <img
+              src={logowhite}
+              alt="Propharm"
+              className="h-12 w-auto object-contain"
+            />
+          </a>
             <p className="text-footer-foreground/70 mb-6">
-              Lugar perfeito da internet assegurados e venda recípiente de produtos farmacêuticos.
+            Um indústria farmacêutica que tem a missão produzir e distribuir soluções de saúde.
             </p>
             <div className="flex gap-2 mb-4">
               <Input
@@ -56,7 +59,7 @@ const Footer = () => {
           {/* Column 2 - Information */}
           <div>
             <h3 className="font-display font-semibold text-lg text-footer-foreground mb-6">
-              Information
+              Informação
             </h3>
             <ul className="space-y-3">
               {informationLinks.map((link) => (
@@ -81,13 +84,13 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-1 shrink-0" />
                 <p className="text-footer-foreground/70">
-                  72 Washington Square South, New York, NY 10012, United States
+                  Vila Fon-Ar, Condomínio Frente da Caixa Cruz, Luanda, Angola
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <a href="mailto:info@propharm.com" className="text-footer-foreground/70 hover:text-footer-foreground">
-                  info@propharm.com
+                <a href="mailto:geral@sanepvida.co.ao" className="text-footer-foreground/70 hover:text-footer-foreground">
+                  geral@sanepvida.co.ao
                 </a>
               </div>
               <div className="flex gap-3 mt-6">
@@ -110,7 +113,7 @@ const Footer = () => {
       <div className="border-t border-footer-foreground/10">
         <div className="container py-6">
           <p className="text-center text-footer-foreground/50 text-sm">
-            Copyright 2024. Propharm. Todos Direitos Reservados.
+            Copyright 2025. Sanep Vida. Todos Direitos Reservados.
           </p>
         </div>
       </div>
