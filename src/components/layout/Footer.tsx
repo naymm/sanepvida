@@ -78,7 +78,7 @@ const Footer = () => {
           {/* Column 3 - Contact */}
           <div>
             <h3 className="font-display font-semibold text-lg text-footer-foreground mb-6">
-              About / Contacts
+              Endereço
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">

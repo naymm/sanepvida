@@ -24,7 +24,7 @@ const categories = [
 
 const CategoriesSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-16 bg-background categorias">
       <div className="container">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category, index) => (

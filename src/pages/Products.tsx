@@ -32,11 +32,11 @@ const Products = () => {
             {/* Título / contexto */}
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
               <div>
-                <h1 className="text-3xl md:text-4xl font-display font-bold text-primary-dark">
+                <h1 className="text-3xl md:text-4xl font-display font-bold text-primary-dark text-center md:text-left">
                   Nossos Produtos
                 </h1>
                 <p className="text-muted-foreground mt-2 max-w-xl">
-                  Explore a linha completa de produtos Propharm e filtre por categoria:
+                  Explore a linha completa de produtos Vida e filtre por categoria:
                   Galênicos, Iodopovidonas e Adjuvantes.
                 </p>
               </div>

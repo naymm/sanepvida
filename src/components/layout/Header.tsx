@@ -12,8 +12,8 @@ const Header = () => {
     { name: "Início", href: "/" },
     { name: "Sobre Nós", href: "/sobre-nos" },
     { name: "Produtos", href: "/produtos" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contate-nos", href: "#contato" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contacte-nos", href: "/contato" },
   ];
 
   const getLinkClass = (href: string) => {
@@ -66,15 +66,6 @@ const Header = () => {
           <div className="flex items-center gap-4">
             <button className="p-2 text-muted-foreground hover:text-primary transition-colors">
               <Search className="w-5 h-5" />
-            </button>
-            <button className="p-2 text-muted-foreground hover:text-primary transition-colors hidden sm:block">
-              <Heart className="w-5 h-5" />
-            </button>
-            <button className="p-2 text-muted-foreground hover:text-primary transition-colors relative">
-              <ShoppingCart className="w-5 h-5" />
-              <span className="absolute -top-1 -right-1 w-5 h-5 bg-secondary text-secondary-foreground text-xs rounded-full flex items-center justify-center font-semibold">
-                0
-              </span>
             </button>
 
             {/* Mobile Menu Button */}
